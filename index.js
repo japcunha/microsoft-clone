@@ -1,24 +1,10 @@
-//lógica de programação
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-function obterInteiro(valor) {
-    do {
-        valor = readline.question("digite um valor(inteiro): ")
-    } while (!isNaN(valor) || !Number.isInteger(isNaN(valor)));
-    return valor;
+import Math from 'Math';
 
-}
-readline.question("digite o primeiro valor: ", valor1 => {
+const numeros = [1,3,6,88,56];
 
-    readline.question("digite o segundo valor: ", valor2 => {
+const maximo = Math.max(numeros);
 
-        let Soma = Number(valor1) + Number(valor2);
+const minimo = Math.min(numeros);
 
-        console.log(`o resultado é: ${Soma}`);
-        readline.close();
-    });
-
-});
-
+console.log("valor maximo:", maximo);
+console.log("valor minimo:". minimo);
