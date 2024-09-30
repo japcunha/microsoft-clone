@@ -108,6 +108,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding: 0 5%;
 
     .wrapper-cards {
         display: flex;
@@ -120,7 +121,7 @@ header {
             flex-grow: 1;
             border-radius: 0;
             border: none;
-            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgb(103, 103, 103) 0px 3px 8px;
 
             .card-body {
                 display: flex;
@@ -128,7 +129,7 @@ header {
                 justify-content: space-between;
 
                 .card-text {
-                    margin-bottom: 0;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -136,8 +137,53 @@ header {
 }
 
 .btn.btn-primary {
-    border: 0;
+    border: none;
     border-radius: 0;
     background-color: #0067b8;
-    ;
+}
+
+.banner {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+
+    img {
+        width: 100%;
+        max-width: 1500px;
+    }
+
+    .card {
+        position: absolute;
+        left: 13%;
+        border-radius: 0;
+        border: none;
+        padding: 20px;
+
+        h5 {
+            font-size: .5rem;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.title-business {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    margin-bottom: 20px;
+
+
+div {
+    width: 100%;
+    max-width: 1500px;
+
+    h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+}
 }
